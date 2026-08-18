@@ -31,9 +31,9 @@ function ActivityBadge({ className, icon, message }: ActivityBadgeProps) {
 
 function Header() {
   return (
-    <header className="grid min-h-26 grid-cols-[auto_1fr_auto] items-center rounded-full border border-[#333] bg-[#171717]/70 px-8 backdrop-blur-lg max-[860px]:min-h-19 max-[860px]:px-5.5 max-[560px]:min-h-16.5 max-[560px]:pr-2.5 max-[560px]:pl-4.5">
+    <header className="grid min-h-26 grid-cols-[auto_1fr_auto] items-center rounded-full border border-[#333] bg-[#171717]/70 px-8 backdrop-blur-lg max-[860px]:min-h-19 max-[860px]:px-5.5 max-[560px]:min-h-20 max-[560px]:grid-cols-[1fr_auto] max-[560px]:rounded-none max-[560px]:border-0 max-[560px]:bg-transparent max-[560px]:px-0 max-[560px]:backdrop-blur-none">
       <a
-        className="text-[30px] font-bold tracking-[-1.5px] text-white max-[860px]:text-2xl max-[560px]:text-[21px] max-[560px]:tracking-[-1px]"
+        className="text-[30px] font-bold tracking-[-1.5px] text-white [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[860px]:text-2xl max-[560px]:text-[24px] max-[560px]:tracking-[-1px]"
         href="#top"
         aria-label="MoneyBack home"
       >
@@ -56,45 +56,53 @@ function Header() {
       </nav>
 
       <a
-        className="grid min-h-13 min-w-40 place-items-center rounded-full border border-[#11ccf5] text-[19px] font-bold text-[#12cef7] transition duration-200 hover:-translate-y-0.5 hover:bg-[#12cef7] hover:text-[#071114] focus-visible:-translate-y-0.5 focus-visible:bg-[#12cef7] focus-visible:text-[#071114] motion-reduce:transition-none max-[860px]:min-h-11 max-[860px]:min-w-29.5 max-[860px]:text-base max-[560px]:min-h-10.5 max-[560px]:min-w-26 max-[560px]:text-sm"
+        className="grid min-h-13 min-w-40 place-items-center rounded-full border border-[#11ccf5] text-[19px] font-bold text-[#12cef7] transition duration-200 hover:-translate-y-0.5 hover:bg-[#12cef7] hover:text-[#071114] focus-visible:-translate-y-0.5 focus-visible:bg-[#12cef7] focus-visible:text-[#071114] motion-reduce:transition-none max-[860px]:min-h-11 max-[860px]:min-w-29.5 max-[860px]:text-base max-[560px]:hidden"
         href="#get-started"
       >
         Start free
       </a>
+
+      <button
+        className="hidden size-10 place-items-center max-[560px]:grid"
+        type="button"
+        aria-label="Open navigation menu"
+      >
+        <span className="relative block h-4 w-6 border-y-2 border-white before:absolute before:top-1/2 before:left-0 before:h-0.5 before:w-6 before:-translate-y-1/2 before:bg-white" />
+      </button>
     </header>
   );
 }
 
 export function Hero() {
   return (
-    <main
+    <section
       id="top"
-      className="min-h-svh overflow-hidden bg-[#111] text-[#f8f8f8] [background-image:radial-gradient(circle_at_80%_62%,rgb(12_64_79_/_42%),transparent_31rem)]"
+      className="min-h-svh overflow-hidden bg-[#111] text-[#f8f8f8] [background-image:radial-gradient(circle_at_80%_62%,rgb(12_64_79_/_42%),transparent_31rem)] [font-family:Inter,Arial,sans-serif] max-[560px]:[background-image:none]"
     >
-      <div className="mx-auto w-[min(calc(100%-48px),1180px)] pt-12 max-[860px]:w-[min(calc(100%-32px),680px)] max-[860px]:pt-5 max-[560px]:w-[min(calc(100%-24px),440px)]">
+      <div className="mx-auto w-[min(calc(100%-48px),1180px)] pt-12 max-[860px]:w-[min(calc(100%-32px),680px)] max-[860px]:pt-5 max-[560px]:w-[calc(100%-34px)] max-[560px]:pt-4">
         <Header />
 
         <section
-          className="grid min-h-[calc(100svh-153px)] grid-cols-[minmax(0,1fr)_minmax(430px,.74fr)] items-center gap-9.5 max-[1100px]:grid-cols-[minmax(0,1fr)_minmax(380px,.7fr)] max-[860px]:min-h-0 max-[860px]:grid-cols-1 max-[860px]:pt-20 max-[860px]:text-center max-[560px]:pt-16"
+          className="grid min-h-[calc(100svh-153px)] grid-cols-[minmax(0,1fr)_minmax(430px,.74fr)] items-center gap-9.5 max-[1100px]:grid-cols-[minmax(0,1fr)_minmax(380px,.7fr)] max-[860px]:min-h-0 max-[860px]:grid-cols-1 max-[860px]:pt-20 max-[860px]:text-center max-[560px]:pt-[88px] max-[560px]:text-left"
           aria-labelledby="hero-heading"
         >
           <div className="relative z-10 pb-[5vh] max-[860px]:pb-0">
             <h1
               id="hero-heading"
-              className="max-w-190 text-[clamp(60px,5.55vw,80px)] leading-[1.27] font-bold tracking-[-4px] max-[1100px]:text-[clamp(57px,6.7vw,76px)] max-[860px]:text-[clamp(47px,12vw,72px)] max-[860px]:leading-[1.08] max-[860px]:tracking-[-3px] max-[560px]:text-[clamp(42px,12.5vw,60px)] max-[560px]:tracking-[-2.5px]"
+              className="max-w-190 text-[clamp(60px,5.55vw,80px)] leading-[1.27] font-bold tracking-[-4px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[1100px]:text-[clamp(57px,6.7vw,76px)] max-[860px]:text-[clamp(47px,12vw,72px)] max-[860px]:leading-[1.08] max-[860px]:tracking-[-3px] max-[560px]:text-[clamp(52px,14.4vw,58px)] max-[560px]:leading-[1.1] max-[560px]:tracking-[-3px]"
             >
               Shop. Save.
               <br />
               Support the Planet
             </h1>
 
-            <p className="mt-11 text-[clamp(20px,1.67vw,24px)] leading-[1.45] text-[#f2f2f2] max-[860px]:mx-auto max-[860px]:mt-7.5 max-[860px]:max-w-142.5 max-[860px]:text-xl max-[560px]:text-[17px]">
+            <p className="mt-11 text-[clamp(20px,1.67vw,24px)] leading-[1.45] text-[#f2f2f2] max-[860px]:mx-auto max-[860px]:mt-7.5 max-[860px]:max-w-142.5 max-[860px]:text-xl max-[560px]:mx-0 max-[560px]:mt-8 max-[560px]:text-[18px] max-[560px]:leading-[1.55]">
               Get cashback on your purchases &amp; turn it into climate impact.
             </p>
 
             <a
               id="get-started"
-              className="mt-12.5 grid min-h-17 w-[min(100%,435px)] place-items-center rounded-full bg-gradient-to-r from-[#17dce8] to-[#229cff] text-xl font-bold text-[#071015] shadow-[0_16px_45px_rgb(23_192_244_/_13%)] transition duration-200 hover:-translate-y-0.75 hover:brightness-110 focus-visible:-translate-y-0.75 focus-visible:brightness-110 motion-reduce:transition-none max-[860px]:mx-auto max-[860px]:mt-8.5 max-[860px]:min-h-15.5 max-[860px]:w-[min(100%,390px)]"
+              className="mt-12.5 grid min-h-17 w-[min(100%,435px)] place-items-center rounded-full bg-gradient-to-r from-[#17dce8] to-[#229cff] text-xl font-bold text-[#071015] shadow-[0_16px_45px_rgb(23_192_244_/_13%)] transition duration-200 hover:-translate-y-0.75 hover:brightness-110 focus-visible:-translate-y-0.75 focus-visible:brightness-110 motion-reduce:transition-none max-[860px]:mx-auto max-[860px]:mt-8.5 max-[860px]:min-h-15.5 max-[860px]:w-[min(100%,390px)] max-[560px]:mt-6.5 max-[560px]:min-h-12 max-[560px]:w-full max-[560px]:text-base"
               href="#mastercard"
             >
               Start Free
@@ -102,12 +110,12 @@ export function Hero() {
           </div>
 
           <div
-            className="relative h-[min(690px,calc(100svh-220px))] min-h-142.5 w-full self-end max-[860px]:mx-auto max-[860px]:h-155 max-[860px]:w-[min(100%,580px)] max-[560px]:mt-5 max-[560px]:h-130 max-[560px]:min-h-0"
+            className="relative h-[min(690px,calc(100svh-220px))] min-h-142.5 w-full self-end max-[860px]:mx-auto max-[860px]:h-155 max-[860px]:w-[min(100%,580px)] max-[560px]:mt-16 max-[560px]:h-140 max-[560px]:min-h-0"
             aria-label="MoneyBack payment cards and member activity"
           >
             <div className="absolute inset-[16%_-35%_-20%] bg-[radial-gradient(circle,rgb(16_112_132_/_38%),transparent_67%)] blur-xl" />
             <Image
-              className="absolute right-[4%] bottom-[-3px] h-auto w-[min(78%,398px)] drop-shadow-[0_30px_45px_rgb(0_0_0_/_34%)] max-[860px]:right-[17%] max-[860px]:w-[min(70%,390px)] max-[560px]:right-[12%] max-[560px]:w-[76%]"
+              className="absolute right-[4%] bottom-[-3px] h-auto w-[min(78%,398px)] drop-shadow-[0_30px_45px_rgb(0_0_0_/_34%)] max-[860px]:right-[17%] max-[860px]:w-[min(70%,390px)] max-[560px]:right-[8%] max-[560px]:w-[84%]"
               src="/Group 5.png"
               alt="Two MoneyBack payment cards"
               width={398}
@@ -133,6 +141,6 @@ export function Hero() {
           </div>
         </section>
       </div>
-    </main>
+    </section>
   );
 }
