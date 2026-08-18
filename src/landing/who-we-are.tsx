@@ -55,7 +55,7 @@ export function WhoWeAre() {
       className="bg-[#131313] py-31 text-white [font-family:Inter,Arial,sans-serif] max-[560px]:py-20"
       aria-labelledby="who-we-are-heading"
     >
-      <div className="mx-auto w-full max-w-[1438px] px-30 max-[1100px]:px-16 max-[860px]:px-8 max-[560px]:px-[26px]">
+      <div className="mx-auto w-full max-w-[1438px] px-30 max-[1100px]:px-16 max-[860px]:px-8 max-[560px]:px-[19px]">
         <h2
           id="who-we-are-heading"
           className="text-[68px] leading-none font-bold tracking-[-2.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[560px]:text-[52px] max-[560px]:tracking-[-2px]"
@@ -72,9 +72,9 @@ export function WhoWeAre() {
         </p>
 
         <div className="mt-8 grid grid-cols-4 gap-5 max-[860px]:grid-cols-2 max-[560px]:mt-5 max-[560px]:block">
-          <div className="overflow-hidden rounded-xl max-[560px]:h-[141px] max-[560px]:w-full">
+          <div className="overflow-hidden rounded-xl max-[560px]:h-[150px] max-[560px]:w-full">
             <Image
-              className="h-full w-full object-cover object-top"
+              className="h-full w-full object-full"
               src="/image.png"
               alt="A green planet covered with trees"
               width={285}
@@ -85,7 +85,7 @@ export function WhoWeAre() {
           <div className="contents max-[560px]:mt-5 max-[560px]:flex max-[560px]:snap-x max-[560px]:snap-mandatory max-[560px]:gap-3 max-[560px]:overflow-x-auto max-[560px]:pb-2 [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
             {features.map((feature) => (
               <article
-                className="flex min-h-79 flex-col justify-center rounded-xl bg-[#201e1e] px-6 max-[560px]:min-h-48 max-[560px]:w-[calc(50%-6px)] max-[560px]:shrink-0 max-[560px]:snap-start max-[560px]:justify-start max-[560px]:px-4 max-[560px]:py-8"
+                className="flex min-h-79 flex-col justify-center rounded-xl bg-[#201e1e] px-6 max-[560px]:min-h-48 max-[560px]:w-[257px] max-[560px]:shrink-0 max-[560px]:snap-start max-[560px]:justify-start max-[560px]:px-4 max-[560px]:py-8"
                 key={feature.title}
               >
                 <div className="mb-5 text-[#10d9f4] max-[560px]:hidden">

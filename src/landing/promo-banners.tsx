@@ -44,7 +44,7 @@ export function PromoBanners() {
           </div>
         </article>
 
-        <article className="relative aspect-[587/315] overflow-hidden rounded-xl">
+        <article className="relative aspect-[587/315] overflow-hidden rounded-xl max-[560px]:hidden">
           <Image
             className="object-cover"
             src="/gift.png"

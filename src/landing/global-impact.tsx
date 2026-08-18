@@ -13,10 +13,10 @@ export function GlobalImpact() {
       className="bg-black py-24 text-white [font-family:Inter,Arial,sans-serif] max-[560px]:py-16"
       aria-labelledby="global-impact-heading"
     >
-      <div className="mx-auto w-full max-w-[1438px] px-30 max-[1100px]:px-16 max-[860px]:px-8 max-[560px]:px-[13px]">
+      <div className="mx-auto w-full max-w-[1438px] px-30 max-[1100px]:px-16 max-[860px]:px-8 max-[560px]:px-[19px]">
         <h2
           id="global-impact-heading"
-          className="text-[68px] leading-none font-bold tracking-[-2.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[860px]:text-[54px] max-[560px]:max-w-72 max-[560px]:text-[36px] max-[560px]:leading-[1.08] max-[560px]:tracking-[-1.5px]"
+          className="text-[68px] leading-none font-bold tracking-[-2.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[860px]:text-[54px] max-[560px]:max-w-88 max-[560px]:text-[44px] max-[560px]:leading-[1.08] max-[560px]:tracking-[-2px]"
         >
           ICEBack’s Global Impact
         </h2>
@@ -27,16 +27,16 @@ export function GlobalImpact() {
 
         <div className="mt-8 grid grid-cols-[535px_651px] items-start gap-3 max-[1100px]:grid-cols-[minmax(430px,535px)_minmax(0,651px)] max-[860px]:grid-cols-1 max-[560px]:mt-4">
           <div>
-            <dl className="grid grid-cols-2 gap-3 max-[560px]:gap-2.5">
+            <dl className="grid grid-cols-2 gap-3">
               {impactMetrics.map((metric) => (
                 <div
-                  className="grid min-h-38.5 place-content-center rounded-xl bg-[#211f1f] text-center max-[560px]:min-h-[99px] max-[560px]:rounded-[10px]"
+                  className="grid min-h-38.5 place-content-center rounded-xl bg-[#211f1f] text-center max-[560px]:min-h-[121px] max-[560px]:rounded-[10px]"
                   key={metric.label}
                 >
-                  <dt className="text-[15px] max-[560px]:text-[12px]">
+                  <dt className="text-[15px] max-[560px]:text-[14px]">
                     {metric.label}
                   </dt>
-                  <dd className="mt-2 text-[27px] font-bold max-[560px]:mt-1.5 max-[560px]:text-[22px]">
+                  <dd className="mt-2 text-[27px] font-bold max-[560px]:mt-2 max-[560px]:text-[27px]">
                     {metric.value}
                   </dd>
                 </div>
@@ -44,7 +44,7 @@ export function GlobalImpact() {
             </dl>
 
             <a
-              className="mt-6 grid min-h-15 w-90.5 place-items-center rounded-full bg-gradient-to-r from-[#17dce8] to-[#229cff] text-lg font-bold text-[#071015] transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:-translate-y-0.5 focus-visible:brightness-110 motion-reduce:transition-none max-[560px]:mt-3 max-[560px]:min-h-10 max-[560px]:w-full max-[560px]:text-[12px]"
+              className="mt-6 grid min-h-15 w-90.5 place-items-center rounded-full bg-gradient-to-r from-[#17dce8] to-[#229cff] text-lg font-bold text-[#071015] transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:-translate-y-0.5 focus-visible:brightness-110 motion-reduce:transition-none max-[560px]:mt-3 max-[560px]:min-h-12 max-[560px]:w-full max-[560px]:text-[16px]"
               href="#contact"
             >
               Request Charity

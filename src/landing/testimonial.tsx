@@ -116,6 +116,38 @@ export default function TestimonialsSection() {
             <TestimonialCard testimonial={testimonial} key={testimonial.id} />
           ))}
         </div>
+
+        <article className="relative mt-19 hidden h-[347px] overflow-hidden rounded-xl bg-[#1b3039] max-[560px]:block">
+          <Image
+            className="absolute right-0 bottom-0 h-auto w-full"
+            src="/gift.png"
+            alt=""
+            width={587}
+            height={315}
+            sizes="calc(100vw - 26px)"
+          />
+
+          <div className="relative z-10 flex h-full flex-col items-start px-7.5 pt-8.5">
+            <h3 className="text-[34px] leading-[1.35] font-semibold tracking-[-0.8px]">
+              Invite Friends,
+              <br />
+              Get Rewarded
+            </h3>
+            <p className="mt-3 text-[21px] leading-[1.55]">
+              Share your link and earn
+              <br />
+              CHF 5 or double it for a
+              <br />
+              cause 🌱
+            </p>
+            <Link
+              className="mt-6 grid min-h-15.5 w-52 place-items-center rounded-full bg-gradient-to-r from-[#17dce8] to-[#229cff] text-[16px] font-semibold text-[#071015] transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:-translate-y-0.5 focus-visible:brightness-110 motion-reduce:transition-none"
+              href="#refer-a-friend"
+            >
+              Refer Now
+            </Link>
+          </div>
+        </article>
       </div>
     </section>
   );
