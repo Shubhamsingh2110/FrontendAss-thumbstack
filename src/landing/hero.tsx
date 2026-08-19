@@ -31,7 +31,7 @@ function ActivityBadge({ className, icon, message }: ActivityBadgeProps) {
 
 function Header() {
   return (
-    <header className="grid min-h-22 grid-cols-[auto_1fr_auto] items-center rounded-full border border-[#333] bg-[#171717]/70 px-8 backdrop-blur-lg max-[860px]:min-h-19 max-[860px]:px-5.5 max-[560px]:min-h-20 max-[560px]:grid-cols-[1fr_auto] max-[560px]:rounded-none max-[560px]:border-0 max-[560px]:bg-transparent max-[560px]:px-0 max-[560px]:backdrop-blur-none">
+    <header className="grid min-h-22 grid-cols-[auto_1fr_auto] items-center rounded-full border border-[#333] bg-[#171717]/70 px-8 backdrop-blur-lg min-[861px]:fixed min-[861px]:top-6 min-[861px]:left-1/2 min-[861px]:z-50 min-[861px]:w-[min(calc(100%-48px),1180px)] min-[861px]:-translate-x-1/2 max-[860px]:min-h-19 max-[860px]:px-5.5 max-[560px]:min-h-20 max-[560px]:grid-cols-[1fr_auto] max-[560px]:rounded-none max-[560px]:border-0 max-[560px]:bg-transparent max-[560px]:px-0 max-[560px]:backdrop-blur-none">
       <a
         className="text-[30px] font-bold tracking-[-1.5px] text-white [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[860px]:text-2xl max-[560px]:text-[24px] max-[560px]:tracking-[-1px]"
         href="#top"
@@ -81,6 +81,7 @@ export function Hero() {
     >
       <div className="mx-auto w-[min(calc(100%-48px),1180px)] pt-16 max-[860px]:w-[min(calc(100%-32px),680px)] max-[860px]:pt-5 max-[560px]:w-[calc(100%-34px)] max-[560px]:pt-4">
         <Header />
+        <div className="hidden h-22 min-[861px]:block" aria-hidden="true" />
 
         <section
           className="grid min-h-[calc(100svh-153px)] grid-cols-[minmax(0,1fr)_minmax(430px,.74fr)] items-center gap-9.5 max-[1100px]:grid-cols-[minmax(0,1fr)_minmax(380px,.7fr)] max-[860px]:min-h-0 max-[860px]:grid-cols-1 max-[860px]:pt-20 max-[860px]:text-center max-[560px]:pt-[88px] max-[560px]:text-left"
