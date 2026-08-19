@@ -319,7 +319,7 @@ export default function LatestBlogs() {
         overflow-hidden
         bg-[#000]
         text-white
-        pb-32
+        md:pb-32
       "
     >
       {/* =====================================================

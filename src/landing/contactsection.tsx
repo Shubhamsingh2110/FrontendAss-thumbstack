@@ -159,6 +159,8 @@ export default function ContactSection() {
         w-full
         bg-[#101010]
         text-white
+        mt-20
+        md:mt-0
       "
     >
       {/* =====================================================
@@ -201,10 +203,10 @@ xl:gap-[20px]
             <h2
               className="
                 whitespace-nowrap
-                text-[32px]
-                font-semibold
+                text-[56px]
+                font-normal
                 leading-[1]
-                tracking-[-2.8px]
+                tracking-[0px]
 
                 xl:text-[68px]
                 xl:font-semibold

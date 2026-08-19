@@ -74,7 +74,7 @@ export default function TestimonialsSection() {
   return (
     <section
       id="testimonials"
-      className="overflow-hidden bg-[#141414] py-20 text-white [font-family:Inter,Arial,sans-serif] max-[560px]:py-16"
+      className="overflow-hidden bg-[#141414] md:py-20 text-white [font-family:Inter,Arial,sans-serif] max-[560px]:py-0"
       aria-labelledby="testimonials-heading"
     >
       <div className="mx-auto grid w-full max-w-[1438px] grid-cols-2 items-start gap-9 px-30 max-[1100px]:px-16 max-[860px]:grid-cols-1 max-[860px]:px-8 max-[560px]:block max-[560px]:px-[13px]">
@@ -141,7 +141,7 @@ export default function TestimonialsSection() {
               cause 🌱
             </p>
             <Link
-              className="mt-6 grid min-h-15.5 w-52 place-items-center rounded-full bg-gradient-to-r from-[#17dce8] to-[#229cff] text-[16px] font-semibold text-[#071015] transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:-translate-y-0.5 focus-visible:brightness-110 motion-reduce:transition-none"
+              className="mt-6 grid min-h-15.5 w-44 place-items-center rounded-full bg-gradient-to-r from-[#17dce8] to-[#229cff] text-[16px] font-semibold text-[#071015] transition duration-200 hover:-translate-y-0.5 hover:brightness-110 focus-visible:-translate-y-0.5 focus-visible:brightness-110 motion-reduce:transition-none"
               href="#refer-a-friend"
             >
               Refer Now

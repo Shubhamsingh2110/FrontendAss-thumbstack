@@ -110,12 +110,12 @@ export function Hero() {
           </div>
 
           <div
-            className="relative h-[min(690px,calc(100svh-220px))] min-h-142.5 w-full self-end max-[860px]:mx-auto max-[860px]:h-155 max-[860px]:w-[min(100%,580px)] max-[560px]:mt-16 max-[560px]:h-140 max-[560px]:min-h-0"
+            className="relative h-[min(690px,calc(100svh-220px))] min-h-142.5 w-full self-end max-[860px]:mx-auto max-[860px]:h-155 max-[860px]:w-[min(100%,580px)] max-[560px]:mt-16 max-[560px]:h-[calc((100vw-34px)*1.17)] max-[560px]:min-h-0"
             aria-label="MoneyBack payment cards and member activity"
           >
             <div className="absolute inset-[16%_-35%_-20%] bg-[radial-gradient(circle,rgb(16_112_132_/_38%),transparent_67%)] blur-xl" />
             <Image
-              className="absolute right-[4%] bottom-[-3px] h-auto w-[min(78%,398px)] drop-shadow-[0_30px_45px_rgb(0_0_0_/_34%)] max-[860px]:right-[17%] max-[860px]:w-[min(70%,390px)] max-[560px]:right-[8%] max-[560px]:w-[84%]"
+              className="absolute right-[4%] bottom-[-3px] h-auto w-[min(78%,398px)] drop-shadow-[0_30px_45px_rgb(0_0_0_/_34%)] max-[860px]:right-[17%] max-[860px]:w-[min(70%,390px)] max-[560px]:hidden"
               src="/Group 5.png"
               alt="Two MoneyBack payment cards"
               width={398}
@@ -123,18 +123,35 @@ export function Hero() {
               priority
             />
 
+            <Image
+              className="absolute top-0 left-[5%] hidden h-auto w-[58%] drop-shadow-[0_30px_45px_rgb(0_0_0_/_34%)] max-[560px]:block"
+              src="/mob2.png"
+              alt="Blue MoneyBack card"
+              width={297}
+              height={408}
+              priority
+            />
+            <Image
+              className="absolute top-[4%] right-[8%] z-[1] hidden h-auto w-[64%] drop-shadow-[0_30px_45px_rgb(0_0_0_/_34%)] max-[560px]:block"
+              src="/mob1.png"
+              alt="MoneyBack card"
+              width={225}
+              height={382}
+              priority
+            />
+
             <ActivityBadge
-              className="top-[19%] right-[7%] max-[860px]:right-[9%] max-[560px]:top-[20%] max-[560px]:right-[2%]"
+              className="top-[19%] right-[7%] max-[860px]:right-[9%] max-[560px]:top-[5%] max-[560px]:right-auto max-[560px]:left-[1%]"
               icon="👨🏻"
               message="Ryan earned ₹1000 in cashback today"
             />
             <ActivityBadge
-              className="top-[43%] -right-[20%] max-[860px]:left-[4%] max-[560px]:top-[42%] max-[560px]:left-0"
+              className="top-[43%] md:-right-[20%] max-[860px]:left-[4%] max-[560px]:top-[27%] max-[560px]:left-[15%]"
               icon="🌱"
               message="Your spending helps plant trees & offset carbon"
             />
             <ActivityBadge
-              className="right-[-20%] bottom-[19%] max-[860px]:right-0 max-[560px]:right-[-3%] max-[560px]:bottom-[18%]"
+              className="right-[-20%] bottom-[19%] max-[860px]:right-0 max-[560px]:right-auto max-[560px]:bottom-auto max-[560px]:top-[61%] max-[560px]:left-[-1%]"
               icon="🌎"
               message="Join 500,000+ members making every purchase count"
             />

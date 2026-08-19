@@ -89,14 +89,14 @@ export default function VouchersSection() {
       <div className="mx-auto w-full max-w-[1438px] px-[17px] lg:px-30">
         <h2
           id="vouchers-heading"
-          className="text-[52px] leading-[1.08] font-bold tracking-[0px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] lg:text-[76px] lg:leading-none lg:tracking-[-3px]"
+          className="text-[52px] leading-[1.08] font-semibold md:font-bold tracking-[0px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] lg:text-[76px] lg:leading-none lg:tracking-[-3px]"
         >
-          <span className="lg:hidden">
+          <span className="lg:hidden font-semibold">
             Save More
             <br />
             with Vouchers
           </span>
-          <span className="hidden lg:inline">Save More with Vouchers</span>
+          <span className="hidden lg:inline font-semibold">Save More with Vouchers</span>
         </h2>
 
         <p className="mt-7 max-w-170 text-[18px] leading-[1.55] lg:mt-9 lg:max-w-none lg:text-[27px] lg:leading-relaxed">
