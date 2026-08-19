@@ -201,15 +201,15 @@ xl:gap-[20px]
             <h2
               className="
                 whitespace-nowrap
-                text-[54px]
-                font-bold
+                text-[32px]
+                font-semibold
                 leading-[1]
                 tracking-[-2.8px]
 
-                xl:text-[80px]
-                xl:font-bold
+                xl:text-[68px]
+                xl:font-semibold
                 xl:leading-[1]
-                xl:tracking-[-4.4px]
+                xl:tracking-[0px]
               "
             >
               Let’s Connect
@@ -219,7 +219,7 @@ xl:gap-[20px]
               className="
                 mt-[29px]
                 max-w-[420px]
-                text-[23px]
+                text-[20px]
                 font-normal
                 leading-[1.5]
                 tracking-[-0.35px]
@@ -229,10 +229,10 @@ xl:gap-[20px]
                 xl:text-[29px]
                 xl:font-normal
                 xl:leading-[1.48]
-                xl:tracking-[-0.75px]
+                xl:tracking-[0px]
               "
             >
-              Need assistance? We’d love to hear from you.
+              Need assistance? We’d love to <br /> hear from you.
             </p>
           </div>
 

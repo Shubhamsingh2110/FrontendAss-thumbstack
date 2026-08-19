@@ -12,8 +12,13 @@ type Voucher = (typeof vouchers)[number];
 
 function VoucherCard({ voucher }: { voucher: Voucher }) {
   return (
-    <article className="relative flex h-26.5 w-70.5 shrink-0 lg:h-56 lg:w-155">
-      <div className="relative w-30 shrink-0 overflow-hidden rounded-l-xl bg-white lg:w-54.5 lg:rounded-l-2xl">
+    <article className="relative flex h-26.5 w-70.5 shrink-0 overflow-hidden rounded-xl lg:h-56 lg:w-155 lg:rounded-2xl">
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-10 rounded-xl border border-[#12cdef] lg:rounded-2xl"
+      />
+
+      <div className="relative w-30 shrink-0 overflow-hidden bg-white lg:w-54.5">
         <Image
           className="object-contain px-6 lg:px-8"
           src="/nike.png"
@@ -23,10 +28,21 @@ function VoucherCard({ voucher }: { voucher: Voucher }) {
         />
       </div>
 
-      <span className="absolute top-1/2 left-[-14px] z-10 size-7 -translate-y-1/2 rounded-full bg-[#111] lg:left-[-18px] lg:size-9" />
+      <span
+        aria-hidden="true"
+        className="absolute top-1/2 left-[-18px] z-20 size-9 -translate-y-1/2 rounded-full bg-[#111] lg:left-[-36px] lg:size-18"
+      />
 
-      <div className="relative flex flex-1 flex-col justify-center rounded-r-xl border border-l-0 border-[#12cdef] bg-[#111] px-5 lg:justify-start lg:rounded-r-2xl lg:px-10 lg:pt-7">
-        <span className="absolute top-1/2 right-[-15px] z-10 size-7 -translate-y-1/2 rounded-full border border-[#12cdef] bg-[#111] lg:right-[-19px] lg:size-9.5" />
+      <span
+        aria-hidden="true"
+        className="absolute top-0 bottom-0 left-[119px] z-10 border-l border-dashed border-[#777]/45 lg:left-[217px]"
+      />
+
+      <div className="relative flex flex-1 flex-col justify-center bg-[#111] px-5 lg:justify-start lg:px-10 lg:pt-7">
+        <span
+          aria-hidden="true"
+          className="absolute top-1/2 right-[-19px] z-20 size-9 -translate-y-1/2 rounded-full border border-[#12cdef] bg-[#111] lg:right-[-37px] lg:size-18"
+        />
 
         <h3 className="text-[19px] leading-[1.15] font-normal tracking-[-0.3px] lg:text-[36px] lg:tracking-[-0.8px]">
           <span className="lg:hidden">
@@ -67,13 +83,13 @@ export default function VouchersSection() {
   return (
     <section
       id="vouchers"
-      className="overflow-hidden bg-[#111] pt-16 pb-20 text-white [font-family:Inter,Arial,sans-serif] lg:pt-32 lg:pb-32"
+      className="overflow-hidden bg-[#000] pt-16 pb-20 text-white [font-family:Inter,Arial,sans-serif] lg:pt-32 lg:pb-32"
       aria-labelledby="vouchers-heading"
     >
       <div className="mx-auto w-full max-w-[1438px] px-[17px] lg:px-30">
         <h2
           id="vouchers-heading"
-          className="text-[52px] leading-[1.08] font-bold tracking-[-2.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] lg:text-[76px] lg:leading-none lg:tracking-[-3px]"
+          className="text-[52px] leading-[1.08] font-bold tracking-[0px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] lg:text-[76px] lg:leading-none lg:tracking-[-3px]"
         >
           <span className="lg:hidden">
             Save More

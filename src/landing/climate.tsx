@@ -183,7 +183,7 @@ export default function ClimateProjects() {
       className="
         w-full
         overflow-hidden
-        bg-[#111111]
+        bg-[#000]
         text-white
       "
     >
@@ -205,10 +205,10 @@ export default function ClimateProjects() {
           <h2
             className="
               m-0
-              text-[88px]
+              text-[72px]
               font-semibold
               leading-[1]
-              tracking-[-4px]
+              tracking-[-0px]
             "
           >
             Support Climate Projects

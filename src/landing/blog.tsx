@@ -317,8 +317,9 @@ export default function LatestBlogs() {
       className="
         w-full
         overflow-hidden
-        bg-[#111111]
+        bg-[#000]
         text-white
+        pb-32
       "
     >
       {/* =====================================================
@@ -339,10 +340,10 @@ export default function LatestBlogs() {
           <h2
             className="
               m-0
-              text-[84px]
+              text-[72px]
               font-semibold
               leading-[1]
-              tracking-[-3.5px]
+              tracking-[0px]
             "
           >
             Latest Blogs

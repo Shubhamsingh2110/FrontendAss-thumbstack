@@ -20,7 +20,7 @@ const steps = [
 export function HowItWorks() {
   return (
     <section
-      className="bg-black py-24 text-white [font-family:Inter,Arial,sans-serif] max-[560px]:py-20"
+      className="bg-black py-28 text-white [font-family:Inter,Arial,sans-serif] max-[560px]:py-20"
       aria-labelledby="how-it-works-heading"
     >
       <div className="mx-auto grid min-h-133.5 w-full max-w-[1438px] grid-cols-[minmax(0,480px)_602px] items-center justify-between gap-12 px-30 max-[1100px]:grid-cols-[minmax(0,380px)_minmax(500px,1fr)] max-[1100px]:px-16 max-[860px]:grid-cols-1 max-[860px]:gap-14 max-[860px]:px-8 max-[560px]:gap-12 max-[560px]:px-[17px]"

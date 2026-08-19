@@ -31,13 +31,13 @@ function ActivityBadge({ className, icon, message }: ActivityBadgeProps) {
 
 function Header() {
   return (
-    <header className="grid min-h-26 grid-cols-[auto_1fr_auto] items-center rounded-full border border-[#333] bg-[#171717]/70 px-8 backdrop-blur-lg max-[860px]:min-h-19 max-[860px]:px-5.5 max-[560px]:min-h-20 max-[560px]:grid-cols-[1fr_auto] max-[560px]:rounded-none max-[560px]:border-0 max-[560px]:bg-transparent max-[560px]:px-0 max-[560px]:backdrop-blur-none">
+    <header className="grid min-h-22 grid-cols-[auto_1fr_auto] items-center rounded-full border border-[#333] bg-[#171717]/70 px-8 backdrop-blur-lg max-[860px]:min-h-19 max-[860px]:px-5.5 max-[560px]:min-h-20 max-[560px]:grid-cols-[1fr_auto] max-[560px]:rounded-none max-[560px]:border-0 max-[560px]:bg-transparent max-[560px]:px-0 max-[560px]:backdrop-blur-none">
       <a
         className="text-[30px] font-bold tracking-[-1.5px] text-white [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[860px]:text-2xl max-[560px]:text-[24px] max-[560px]:tracking-[-1px]"
         href="#top"
         aria-label="MoneyBack home"
       >
-        MoneyBack
+        Money <span className="font-normal -ml-1">Back</span>
       </a>
 
       <nav
@@ -56,7 +56,7 @@ function Header() {
       </nav>
 
       <a
-        className="grid min-h-13 min-w-40 place-items-center rounded-full border border-[#11ccf5] text-[19px] font-bold text-[#12cef7] transition duration-200 hover:-translate-y-0.5 hover:bg-[#12cef7] hover:text-[#071114] focus-visible:-translate-y-0.5 focus-visible:bg-[#12cef7] focus-visible:text-[#071114] motion-reduce:transition-none max-[860px]:min-h-11 max-[860px]:min-w-29.5 max-[860px]:text-base max-[560px]:hidden"
+        className="grid min-h-13 min-w-40 place-items-center rounded-full border border-[#11ccf5] text-[19px] font-bold text-[#000] transition duration-200 hover:-translate-y-0.5 hover:bg-[#12cef7] hover:text-[#071114] focus-visible:-translate-y-0.5 focus-visible:bg-[#12cef7] focus-visible:text-[#071114] motion-reduce:transition-none max-[860px]:min-h-11 max-[860px]:min-w-29.5 max-[860px]:text-base max-[560px]:hidden"
         href="#get-started"
       >
         Start free
@@ -79,7 +79,7 @@ export function Hero() {
       id="top"
       className="min-h-svh overflow-hidden bg-[#111] text-[#f8f8f8] [background-image:radial-gradient(circle_at_80%_62%,rgb(12_64_79_/_42%),transparent_31rem)] [font-family:Inter,Arial,sans-serif] max-[560px]:[background-image:none]"
     >
-      <div className="mx-auto w-[min(calc(100%-48px),1180px)] pt-12 max-[860px]:w-[min(calc(100%-32px),680px)] max-[860px]:pt-5 max-[560px]:w-[calc(100%-34px)] max-[560px]:pt-4">
+      <div className="mx-auto w-[min(calc(100%-48px),1180px)] pt-16 max-[860px]:w-[min(calc(100%-32px),680px)] max-[860px]:pt-5 max-[560px]:w-[calc(100%-34px)] max-[560px]:pt-4">
         <Header />
 
         <section
@@ -102,7 +102,7 @@ export function Hero() {
 
             <a
               id="get-started"
-              className="mt-12.5 grid min-h-17 w-[min(100%,435px)] place-items-center rounded-full bg-gradient-to-r from-[#17dce8] to-[#229cff] text-xl font-bold text-[#071015] shadow-[0_16px_45px_rgb(23_192_244_/_13%)] transition duration-200 hover:-translate-y-0.75 hover:brightness-110 focus-visible:-translate-y-0.75 focus-visible:brightness-110 motion-reduce:transition-none max-[860px]:mx-auto max-[860px]:mt-8.5 max-[860px]:min-h-15.5 max-[860px]:w-[min(100%,390px)] max-[560px]:mt-6.5 max-[560px]:min-h-12 max-[560px]:w-full max-[560px]:text-base"
+              className="mt-12.5 grid min-h-17 w-[min(100%,435px)] place-items-center rounded-full bg-gradient-to-r from-[#17dce8] to-[#229cff] text-xl font-bold text-[#000000] shadow-[0_16px_45px_rgb(23_192_244_/_13%)] transition duration-200 hover:-translate-y-0.75 hover:brightness-110 focus-visible:-translate-y-0.75 focus-visible:brightness-110 motion-reduce:transition-none max-[860px]:mx-auto max-[860px]:mt-8.5 max-[860px]:min-h-15.5 max-[860px]:w-[min(100%,390px)] max-[560px]:mt-6.5 max-[560px]:min-h-12 max-[560px]:w-full max-[560px]:text-base"
               href="#mastercard"
             >
               Start Free
@@ -129,7 +129,7 @@ export function Hero() {
               message="Ryan earned ₹1000 in cashback today"
             />
             <ActivityBadge
-              className="top-[43%] left-[2%] max-[860px]:left-[4%] max-[560px]:top-[42%] max-[560px]:left-0"
+              className="top-[43%] -right-[20%] max-[860px]:left-[4%] max-[560px]:top-[42%] max-[560px]:left-0"
               icon="🌱"
               message="Your spending helps plant trees & offset carbon"
             />

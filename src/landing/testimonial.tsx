@@ -81,7 +81,7 @@ export default function TestimonialsSection() {
         <div>
           <h2
             id="testimonials-heading"
-            className="text-[68px] leading-[1.16] font-bold tracking-[-2.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[560px]:text-[44px] max-[560px]:leading-[1.05] max-[560px]:tracking-[-1.8px]"
+            className="text-[68px] leading-[1.16] font-bold tracking-[0px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[560px]:text-[44px] max-[560px]:leading-[1.05] max-[560px]:tracking-[-1.8px]"
           >
             What Our
             <br />

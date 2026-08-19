@@ -50,10 +50,10 @@ export default function FAQSection() {
   return (
     <section id="faq" className="bg-[#101010] text-white [font-family:Inter,Arial,sans-serif]">
       <div className="mx-auto w-full max-w-[1438px] px-[13px] pt-24 pb-14 md:px-30 md:pt-26 md:pb-28">
-        <h2 className="text-[42px] leading-none font-bold tracking-[-1.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] md:text-[68px] md:tracking-[-2.5px]">
+        <h2 className="text-3xl leading-none font-bold tracking-[-1.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] md:text-[68px] md:tracking-[-2.5px]">
           FAQS
         </h2>
-        <p className="mt-5 max-w-80 text-[17px] leading-[1.5] md:mt-7 md:max-w-none md:text-[24px]">
+        <p className="mt-5 max-w-80 text-[17px] leading-[1.5] md:mt-7 md:max-w-none md:text-[32px]">
           Everything you need to know, all in one place.
         </p>
 
@@ -72,13 +72,13 @@ export default function FAQSection() {
                   aria-expanded={isOpen}
                   onClick={() => setOpenIndex(isOpen ? null : index)}
                 >
-                  <span className="pr-4">{faq.question}</span>
+                  <span className="pr-4 text-2xl">{faq.question}</span>
                   <Chevron open={isOpen} />
                 </button>
 
                 <div className={`grid transition-[grid-template-rows,opacity] duration-300 ${isOpen ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
                   <div className="overflow-hidden">
-                    <p className="rounded-b-[10px] bg-[#211f1f] px-3 pb-4 text-[12px] leading-[1.55] text-[#ddd] md:max-w-255 md:rounded-none md:bg-transparent md:px-0 md:pb-9 md:text-[14px] md:leading-[1.55]">
+                    <p className="rounded-b-[10px] bg-[#211f1f] px-3 pb-4 text-xl leading-[1.55] text-[#ddd] md:max-w-255 md:rounded-none md:bg-transparent md:px-0 md:pb-9 md:text-xl md:leading-[1.55]">
                       {faq.answer}
                     </p>
                   </div>

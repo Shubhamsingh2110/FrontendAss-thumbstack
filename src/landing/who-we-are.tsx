@@ -58,12 +58,12 @@ export function WhoWeAre() {
       <div className="mx-auto w-full max-w-[1438px] px-30 max-[1100px]:px-16 max-[860px]:px-8 max-[560px]:px-[19px]">
         <h2
           id="who-we-are-heading"
-          className="text-[68px] leading-none font-bold tracking-[-2.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[560px]:text-[52px] max-[560px]:tracking-[-2px]"
+          className="text-[68px] leading-none font-bold tracking-[-.0px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[560px]:text-[52px] max-[560px]:tracking-[-2px]"
         >
           Who We Are
         </h2>
 
-        <p className="mt-9 text-[26px] leading-relaxed max-[560px]:hidden">
+        <p className="mt-9 text-[26px] font-normal leading-relaxed max-[560px]:hidden">
           Learn how ICEBack turns your spending into sustainable impact.
         </p>
         <p className="mt-7 hidden text-[19px] leading-[1.5] max-[560px]:block">
@@ -91,7 +91,7 @@ export function WhoWeAre() {
                 <div className="mb-5 text-[#10d9f4] max-[560px]:hidden">
                   <FeatureIcon name={feature.icon} />
                 </div>
-                <h3 className="text-[23px] font-semibold max-[560px]:text-[18px]">
+                <h3 className="text-[23px] font-light max-[560px]:text-[18px]">
                   {feature.title}
                 </h3>
                 <p className="mt-2 whitespace-pre-line text-[17px] leading-[1.55] text-[#aaa] max-[560px]:text-[15px] max-[560px]:leading-[1.6]">

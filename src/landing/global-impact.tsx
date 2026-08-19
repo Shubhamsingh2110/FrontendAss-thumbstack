@@ -16,12 +16,12 @@ export function GlobalImpact() {
       <div className="mx-auto w-full max-w-[1438px] px-30 max-[1100px]:px-16 max-[860px]:px-8 max-[560px]:px-[19px]">
         <h2
           id="global-impact-heading"
-          className="text-[68px] leading-none font-bold tracking-[-2.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[860px]:text-[54px] max-[560px]:max-w-88 max-[560px]:text-[44px] max-[560px]:leading-[1.08] max-[560px]:tracking-[-2px]"
+          className="text-[70px] leading-none font-bold tracking-[0px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[860px]:text-[54px] max-[560px]:max-w-88 max-[560px]:text-[44px] max-[560px]:leading-[1.08] max-[560px]:tracking-[-2px]"
         >
           ICEBack’s Global Impact
         </h2>
 
-        <p className="mt-8 text-[26px] leading-relaxed max-[560px]:hidden">
+        <p className="mt-8 font-light text-[26px] leading-relaxed max-[560px]:hidden">
           Learn how ICEBack turns your spending into sustainable impact.
         </p>
 

@@ -7,7 +7,7 @@ const ctaClassName =
 export function PromoBanners() {
   return (
     <section
-      className="bg-[#111] pt-16 pb-10 text-white [font-family:Inter,Arial,sans-serif] max-[860px]:py-12"
+      className="bg-[#000] pt-16 pb-10 text-white [font-family:Inter,Arial,sans-serif] max-[860px]:py-12"
       aria-label="Featured offers"
     >
       <div className="mx-auto grid w-full max-w-[1438px] grid-cols-2 gap-6 px-30 max-[1100px]:px-16 max-[860px]:grid-cols-1 max-[860px]:px-8 max-[560px]:gap-4 max-[560px]:px-[17px]">
@@ -20,10 +20,10 @@ export function PromoBanners() {
             sizes="(max-width: 860px) calc(100vw - 34px), 587px"
           />
           <div className="relative z-10 flex h-full flex-col items-start justify-center px-7 max-[560px]:px-4">
-            <h2 className="text-[31px] leading-tight font-semibold tracking-[-0.5px] max-[560px]:max-w-44 max-[560px]:text-[18px]">
+            <h2 className="text-[24px] leading-tight font-normal tracking-[-0.5px] max-[560px]:max-w-44 max-[560px]:text-[18px]">
               Get 2.5% Cashback
             </h2>
-            <p className="mt-3 text-[20px] leading-[1.5] max-[560px]:mt-1.5 max-[560px]:max-w-40 max-[560px]:text-[12px]">
+            <p className="mt-3 text-[16px] leading-[1.5] max-[560px]:mt-1.5 max-[560px]:max-w-40 max-[560px]:text-[12px]">
               on New balance Clothing
               <br />
               and Footwear Range
@@ -53,10 +53,10 @@ export function PromoBanners() {
             sizes="(max-width: 860px) calc(100vw - 34px), 587px"
           />
           <div className="relative z-10 flex h-full flex-col items-start justify-center px-7 max-[560px]:px-4">
-            <h2 className="text-[31px] leading-tight font-semibold tracking-[-0.5px] max-[560px]:max-w-48 max-[560px]:text-[18px]">
+            <h2 className="text-[24px] leading-tight font-normal tracking-[-0.5px] max-[560px]:max-w-48 max-[560px]:text-[18px]">
               Invite Friends, Get Rewarded
             </h2>
-            <p className="mt-3 text-[20px] leading-[1.5] max-[560px]:mt-1.5 max-[560px]:max-w-44 max-[560px]:text-[12px]">
+            <p className="mt-3 text-[16px] leading-[1.5] max-[560px]:mt-1.5 max-[560px]:max-w-44 max-[560px]:text-[12px]">
               Share your link and earn CHF 5 or
               <br className="max-[420px]:hidden" /> double it for a cause 🌱
             </p>

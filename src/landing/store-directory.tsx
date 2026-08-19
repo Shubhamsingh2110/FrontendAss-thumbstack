@@ -65,7 +65,7 @@ export function StoreDirectory() {
       <div className="mx-auto w-full max-w-[1438px] px-30 max-[1100px]:px-16 max-[860px]:px-8 max-[560px]:px-[17px]">
         <h2
           id="stores-heading"
-          className="text-[68px] leading-none font-bold tracking-[-2.5px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[860px]:text-[54px] max-[560px]:max-w-84 max-[560px]:text-[48px] max-[560px]:leading-[1.06] max-[560px]:tracking-[-2px]"
+          className="text-[70px] leading-none font-bold tracking-[0px] [font-family:'Helvetica_Neue',Helvetica,Arial,sans-serif] max-[860px]:text-[54px] max-[560px]:max-w-84 max-[560px]:text-[48px] max-[560px]:leading-[1.06] max-[560px]:tracking-[-2px]"
         >
           Shop from +860 Stores
         </h2>
